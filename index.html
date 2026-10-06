@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adeola Adegbemijo</title>
+  <meta name="description" content="Applied Data and Research Scientist. Founder." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#fff;--surface:#f5f5f5;--text:#111;--muted:#555;--label:#888;--accent:#2c3e6b;--border:#e5e5e5;--fig-bg:#f5f5f5;--max:960px}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .site-header{max-width:var(--max);margin:0 auto;padding:56px 28px 0}
+    .site-header h1{font-family:'Newsreader','Georgia',serif;font-weight:500;font-size:clamp(2rem,4.5vw,3rem);letter-spacing:-.5px;line-height:1.1}
+    .site-header .tagline{color:var(--muted);font-size:1.05rem;margin-top:8px}
+    .site-header .links{margin-top:18px;display:flex;gap:20px;font-size:.9rem;flex-wrap:wrap}
+    .site-header .bio{margin-top:24px;color:var(--muted);font-size:.93rem;max-width:62ch}
+    .site-header .bio strong{color:var(--text);font-weight:500}
+    .themes{max-width:var(--max);margin:0 auto;padding:44px 28px 0}
+    .themes-label{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--label);margin-bottom:14px}
+    .theme-grid{display:flex;flex-wrap:wrap;gap:10px}
+    .theme-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:.9rem;font-weight:500;cursor:pointer;transition:all .25s ease;user-select:none;font-family:inherit}
+    .theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+    .theme-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .theme-btn .count{font-size:.75rem;color:var(--label);margin-left:2px;font-weight:400}
+    .theme-btn.active .count{color:rgba(255,255,255,.7)}
+    .entries{max-width:var(--max);margin:0 auto;padding:32px 28px 80px}
+    .entry{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:center;overflow:hidden;max-height:0;opacity:0;padding:0;border-top:1px solid var(--border);transition:max-height .5s ease,opacity .4s ease,padding .4s ease}
+    .entry.visible{max-height:700px;opacity:1;padding:40px 0}
+    @media(max-width:740px){.entry{grid-template-columns:1fr;gap:20px}.entry.visible{max-height:1000px}}
+    .fig{background:var(--fig-bg);border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:center;gap:10px;min-height:210px;cursor:pointer;transition:transform .3s ease}
+    .fig:hover{transform:scale(1.02)}
+    .fig-label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);align-self:flex-start}
+    .fig-canvas{flex:1;width:100%;display:flex;align-items:center;justify-content:center}
+    .fig-canvas svg{width:100%;height:auto;max-height:140px}
+    .fig-status{font-size:.72rem;color:var(--label);background:rgba(0,0,0,.04);padding:4px 10px;border-radius:999px;align-self:flex-end}
+    .text .when{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--label);margin-bottom:6px}
+    .text h2{font-family:'Newsreader','Georgia',serif;font-weight:500;font-size:1.35rem;line-height:1.25;letter-spacing:-.3px;margin-bottom:12px}
+    .text p{color:var(--muted);max-width:46ch}.text p+p{margin-top:10px}.text p strong{color:var(--text);font-weight:500}
+    .chips{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+    .chip{font-size:.76rem;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:4px 10px;border-radius:8px}
+    .site-footer{max-width:var(--max);margin:0 auto;padding:32px 28px 60px;border-top:1px solid var(--border);color:var(--label);font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    @keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}@keyframes dash{to{stroke-dashoffset:0}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+    .anim-pulse{animation:pulse 2s ease-in-out infinite}.anim-float{animation:float 3s ease-in-out infinite}.anim-dash{stroke-dasharray:200;stroke-dashoffset:200;animation:dash 2s ease forwards}
+  </style>
+</head>
+<body>
+<div class="site-header">
+  <h1>Adeola Adegbemijo</h1>
+  <p class="tagline">Applied Data and Research Scientist<br/>Founder</p>
+  <div class="links">
+    <a href="mailto:adeolaadegbemijo@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/adeola-adegbemijo/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Southsidegbemijo" target="_blank">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=DtY4YG8AAAAJ&hl=en" target="_blank">Scholar</a>
+    <a href="https://www.intellign.ai" target="_blank">Intellign.ai</a>
+    <a href="Adeola_Adegbemijo_CV.pdf" target="_blank"><strong>CV ↗</strong></a>
+  </div>
+  <p class="bio">PhD candidate in Systems Science &amp; Industrial Engineering. Industry experience at <strong>AWS</strong> and <strong>Meta</strong>. I build things that extract reliable signal from noisy data: experiment pipelines, Bayesian measurement frameworks, ML models, NLP systems for healthcare, and an optimization platform I founded called <strong>Intellign</strong>. Published in JMIR, presented at INFORMS and AcademyHealth, with a paper under review at <strong>CHI 2027</strong>.</p>
+</div>
+<div class="themes">
+  <div class="themes-label">Explore by theme</div>
+  <div class="theme-grid" id="themeGrid">
+    <button class="theme-btn active" data-theme="all">All <span class="count">12</span></button>
+    <button class="theme-btn" data-theme="founder">Founder <span class="count">1</span></button>
+    <button class="theme-btn" data-theme="experimentation">Experimentation <span class="count">3</span></button>
+    <button class="theme-btn" data-theme="bayesian">Bayesian Methods <span class="count">2</span></button>
+    <button class="theme-btn" data-theme="ml">ML &amp; Prediction <span class="count">2</span></button>
+    <button class="theme-btn" data-theme="llm">LLM &amp; Deep Learning <span class="count">4</span></button>
+    <button class="theme-btn" data-theme="product">Product &amp; UX <span class="count">1</span></button>
+    <button class="theme-btn" data-theme="research">Research <span class="count">2</span></button>
+  </div>
+</div>
+<div class="entries" id="entries">
+
+  <!-- INTELLIGN -->
+  <div class="entry" data-themes="all founder llm">
+    <div class="fig"><span class="fig-label">Intellign.ai · Founder</span><div class="fig-canvas"><svg viewBox="0 0 240 130" fill="none"><rect x="12" y="10" width="130" height="28" rx="8" fill="#2c3e6b" opacity=".1"/><text x="77" y="28" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter">Schedule 24 nurses, 3 wards</text><g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin=".6s" fill="freeze"/><circle cx="30" cy="52" r="3" fill="#2c3e6b" style="animation:blink 1.2s infinite 0s"/><circle cx="42" cy="52" r="3" fill="#2c3e6b" style="animation:blink 1.2s infinite .2s"/><circle cx="54" cy="52" r="3" fill="#2c3e6b" style="animation:blink 1.2s infinite .4s"/></g><g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".6s" begin="1.4s" fill="freeze"/><rect x="12" y="65" width="216" height="55" rx="6" fill="white" opacity=".8" stroke="#e5e5e5"/><line x1="12" y1="79" x2="228" y2="79" stroke="#e5e5e5" stroke-width=".5"/><text x="22" y="75" fill="#888" font-size="6" font-family="Inter">Nurse</text><text x="80" y="75" fill="#888" font-size="6" font-family="Inter">Ward</text><text x="130" y="75" fill="#888" font-size="6" font-family="Inter">Shift</text><text x="185" y="75" fill="#888" font-size="6" font-family="Inter">Why</text><text x="22" y="91" fill="#2c3e6b" font-size="6.5" font-family="Inter">A. Kalu</text><text x="80" y="91" fill="#555" font-size="6.5" font-family="Inter">Ward 1</text><text x="130" y="91" fill="#555" font-size="6.5" font-family="Inter">Day</text><text x="185" y="91" fill="#2c3e6b" font-size="6" font-family="Inter">Fair rotation</text><text x="22" y="103" fill="#2c3e6b" font-size="6.5" font-family="Inter">B. Musa</text><text x="80" y="103" fill="#555" font-size="6.5" font-family="Inter">Ward 2</text><text x="130" y="103" fill="#555" font-size="6.5" font-family="Inter">Night</text><text x="185" y="103" fill="#2c3e6b" font-size="6" font-family="Inter">OT cap met</text><text x="22" y="115" fill="#2c3e6b" font-size="6.5" font-family="Inter">C. Bello</text><text x="80" y="115" fill="#555" font-size="6.5" font-family="Inter">Ward 3</text><text x="130" y="115" fill="#555" font-size="6.5" font-family="Inter">Day</text><text x="185" y="115" fill="#2c3e6b" font-size="6" font-family="Inter">Skill match</text></g></svg></div><span class="fig-status">live product · intellign.ai</span></div>
+    <div class="text"><p class="when">Founder</p><h2>Intellign: the math layer within AI</h2><p>I built <strong><a href="https://www.intellign.ai" target="_blank">Intellign</a></strong>, an AI-powered optimization platform. Describe a scheduling, routing, or assignment problem in plain English and get an explained, defensible plan.</p><p>Ships with a <strong>Python SDK and MCP server</strong> so any LLM or agent can call it. Every assignment carries a <strong>human-readable rationale</strong>.</p><div class="chips"><span class="chip">Optimization / OR</span><span class="chip">Python SDK</span><span class="chip">MCP server</span><span class="chip">LLM-native</span><span class="chip">Explainability</span></div></div>
+  </div>
+
+  <!-- EXPERIMENT PIPELINE -->
+  <div class="entry" data-themes="all experimentation">
+    <div class="fig" id="fig1"><span class="fig-label">Experiment velocity</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><rect x="10" y="10" width="100" height="100" rx="8" stroke="#2c3e6b" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/><text x="60" y="24" text-anchor="middle" fill="#2c3e6b" font-size="8" font-family="Inter">Treatment</text><rect x="130" y="10" width="100" height="100" rx="8" stroke="#888" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/><text x="180" y="24" text-anchor="middle" fill="#888" font-size="8" font-family="Inter">Control</text><g id="fig1-dots"></g></svg></div><span class="fig-status">click to randomize</span></div>
+    <div class="text"><p class="when">Experimentation</p><h2>Scaling how a marketing org learns what works</h2><p>I rebuilt the pipeline: <strong>automated experiment execution</strong> from randomization through causal estimation, and built a live monitoring dashboard.</p><p>Dramatically faster experimentation so the org could <strong>test more hypotheses and allocate budget with confidence</strong>.</p><div class="chips"><span class="chip">Synthetic DiD</span><span class="chip">Python</span><span class="chip">Cloud pipelines</span><span class="chip">Dashboards</span></div></div>
+  </div>
+
+  <!-- EMAIL HOLDOUT -->
+  <div class="entry" data-themes="all experimentation">
+    <div class="fig"><span class="fig-label">Channel holdout</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><g id="fig2-envelopes"></g><line x1="160" y1="10" x2="160" y2="110" stroke="#2c3e6b" stroke-width="2" stroke-dasharray="6 4"/><text x="120" y="118" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter">send</text><text x="200" y="118" text-anchor="middle" fill="#8b5c3a" font-size="7" font-family="Inter">holdout</text><rect x="80" y="95" width="80" height="6" rx="3" fill="#2c3e6b" opacity=".3"/><rect x="80" y="95" width="0" height="6" rx="3" fill="#2c3e6b"><animate attributeName="width" from="0" to="68" dur="2s" fill="freeze"/></rect></svg></div><span class="fig-status">always-on · large-scale</span></div>
+    <div class="text"><p class="when">Causal measurement</p><h2>Answering whether an entire channel is worth the send</h2><p>A new attribution model dropped email from 3rd to 37th. I designed a first-of-its-kind <strong>always-on holdout experiment</strong> at scale.</p><p>Results <strong>recalibrated how the channel is weighted in attribution</strong> and were shared org-wide.</p><div class="chips"><span class="chip">Holdout design</span><span class="chip">Stratification</span><span class="chip">SQL + Python</span><span class="chip">Airflow</span></div></div>
+  </div>
+
+  <!-- CONTENT SYNDICATION -->
+  <div class="entry" data-themes="all experimentation">
+    <div class="fig"><span class="fig-label">Panel analysis</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><g id="fig-panel-grid"></g><text x="120" y="115" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter">entity × time fixed effects</text></svg></div><span class="fig-status">reusable module</span></div>
+    <div class="text"><p class="when">Impact analysis</p><h2>Measuring content syndication impact at speed</h2><p>Built a <strong>reusable Python module</strong> with Panel OLS, two-way fixed effects, clustered standard errors, and conversion analysis at multiple follow-up windows.</p><p>Turned a recurring bottleneck into a <strong>self-serve tool</strong>. Results actioned by senior leadership.</p><div class="chips"><span class="chip">Panel OLS</span><span class="chip">Two-way FE</span><span class="chip">Clustered SEs</span></div></div>
+  </div>
+
+  <!-- AGENTIC AI EXPERIMENTATION AGENT -->
+  <div class="entry" data-themes="all llm">
+    <div class="fig"><span class="fig-label">Agentic AI</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><rect x="90" y="48" width="60" height="26" rx="7" fill="#2c3e6b" opacity=".12" stroke="#2c3e6b" stroke-width="1.2"/><text x="120" y="64" text-anchor="middle" fill="#2c3e6b" font-size="7.5" font-family="Inter" font-weight="500">LLM agent</text><g id="agent-nodes"><rect x="18" y="12" width="52" height="20" rx="5" fill="none" stroke="#888" stroke-width="1"/><text x="44" y="25" text-anchor="middle" fill="#888" font-size="6" font-family="Inter">validate data</text><rect x="18" y="90" width="52" height="20" rx="5" fill="none" stroke="#888" stroke-width="1"/><text x="44" y="103" text-anchor="middle" fill="#888" font-size="6" font-family="Inter">estimate</text><rect x="170" y="12" width="54" height="20" rx="5" fill="none" stroke="#888" stroke-width="1"/><text x="197" y="25" text-anchor="middle" fill="#888" font-size="6" font-family="Inter">interpret</text><rect x="170" y="90" width="54" height="20" rx="5" fill="none" stroke="#888" stroke-width="1"/><text x="197" y="103" text-anchor="middle" fill="#888" font-size="6" font-family="Inter">report</text></g><line x1="70" y1="22" x2="100" y2="50" stroke="#2c3e6b" stroke-width="1.2" class="anim-dash" style="stroke-dasharray:50;stroke-dashoffset:50"/><line x1="70" y1="100" x2="100" y2="72" stroke="#2c3e6b" stroke-width="1.2" class="anim-dash" style="stroke-dasharray:50;stroke-dashoffset:50;animation-delay:.4s"/><line x1="140" y1="55" x2="170" y2="22" stroke="#2c3e6b" stroke-width="1.2" class="anim-dash" style="stroke-dasharray:50;stroke-dashoffset:50;animation-delay:.8s"/><line x1="140" y1="68" x2="170" y2="100" stroke="#2c3e6b" stroke-width="1.2" class="anim-dash" style="stroke-dasharray:50;stroke-dashoffset:50;animation-delay:1.2s"/></svg></div><span class="fig-status">in development</span></div>
+    <div class="text"><p class="when">LLM &amp; agents</p><h2>An agentic AI for always-on experimentation</h2><p>I'm architecting an <strong>AI-powered experimentation agent</strong> that automates the always-on global incrementality pipeline, orchestrating data validation, causal estimation, result interpretation, and reporting across regions and channels with minimal manual intervention.</p><p>I also drove the deployment of <strong>deep learning models</strong> that improve predictive accuracy through pattern recognition and semantic understanding, and I use LLM-based workflows to accelerate analysis and reporting across teams.</p><div class="chips"><span class="chip">LLM agents</span><span class="chip">Agent orchestration</span><span class="chip">Deep learning</span><span class="chip">MCP</span><span class="chip">Agentic AI cert</span></div></div>
+  </div>
+
+  <!-- SHRINKAGE -->
+  <div class="entry" data-themes="all bayesian">
+    <div class="fig"><span class="fig-label">Power-adaptive shrinkage</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><line x1="30" y1="100" x2="220" y2="100" stroke="#e5e5e5"/><line x1="30" y1="10" x2="30" y2="100" stroke="#e5e5e5"/><text x="125" y="115" text-anchor="middle" fill="#888" font-size="7" font-family="Inter">statistical power</text><polyline points="30,95 130,95 130,25 220,25" stroke="#8b5c3a" stroke-width="1.5" stroke-dasharray="5 3" opacity=".5"/><text x="180" y="20" fill="#8b5c3a" font-size="6.5" font-family="Inter" opacity=".6">binary filter</text><path d="M30,95 C60,93 90,85 120,60 C150,35 190,22 220,20" stroke="#2c3e6b" stroke-width="2.5" class="anim-dash" fill="none"/><text x="195" y="34" fill="#2c3e6b" font-size="6.5" font-family="Inter" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".5s" begin="1.8s" fill="freeze"/>continuous</text><circle cx="55" cy="93" r="3" fill="#2c3e6b" opacity=".3" class="anim-pulse"/><circle cx="80" cy="88" r="3.5" fill="#2c3e6b" opacity=".45" class="anim-pulse" style="animation-delay:.3s"/><circle cx="110" cy="72" r="4" fill="#2c3e6b" opacity=".6" class="anim-pulse" style="animation-delay:.6s"/><circle cx="145" cy="45" r="4.5" fill="#2c3e6b" opacity=".8" class="anim-pulse" style="animation-delay:.9s"/><circle cx="190" cy="24" r="5" fill="#2c3e6b" class="anim-pulse" style="animation-delay:1.2s"/></svg></div><span class="fig-status">novel framework</span></div>
+    <div class="text"><p class="when">Methods invention</p><h2>Correcting the bias in how we aggregate evidence</h2><p>The team zeroed out experiments below a significance threshold, <strong>overstating channel impact</strong>.</p><p>I replaced binary filtering with <strong>continuous, power-weighted shrinkage</strong>. The corrected estimate is what the business now uses for budget decisions.</p><div class="chips"><span class="chip">Power priors</span><span class="chip">Winner's-curse correction</span><span class="chip">PyMC</span></div></div>
+  </div>
+
+  <!-- BAYESIAN AGGREGATION -->
+  <div class="entry" data-themes="all bayesian">
+    <div class="fig"><span class="fig-label">Forest plot</span><div class="fig-canvas"><svg viewBox="0 0 240 130" fill="none"><line x1="120" y1="10" x2="120" y2="120" stroke="#e5e5e5"/><line x1="70" y1="25" x2="155" y2="25" stroke="#2c3e6b" stroke-width="1.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin=".2s" fill="freeze"/></line><circle cx="110" cy="25" r="3.5" fill="#2c3e6b" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".3s" begin=".4s" fill="freeze"/></circle><line x1="90" y1="45" x2="170" y2="45" stroke="#2c3e6b" stroke-width="1.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin=".6s" fill="freeze"/></line><circle cx="135" cy="45" r="3.5" fill="#2c3e6b" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".3s" begin=".8s" fill="freeze"/></circle><line x1="55" y1="65" x2="140" y2="65" stroke="#2c3e6b" stroke-width="1.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin="1s" fill="freeze"/></line><circle cx="95" cy="65" r="3.5" fill="#2c3e6b" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".3s" begin="1.2s" fill="freeze"/></circle><line x1="80" y1="85" x2="160" y2="85" stroke="#2c3e6b" stroke-width="1.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".4s" begin="1.4s" fill="freeze"/></line><circle cx="125" cy="85" r="3.5" fill="#2c3e6b" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".3s" begin="1.6s" fill="freeze"/></circle><polygon points="118,102 128,109 118,116 108,109" fill="#2c3e6b" opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".5s" begin="2s" fill="freeze"/></polygon><text x="118" y="128" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter" opacity="0">pooled estimate<animate attributeName="opacity" from="0" to="1" dur=".4s" begin="2.2s" fill="freeze"/></text></svg></div><span class="fig-status">now the team standard</span></div>
+    <div class="text"><p class="when">Bayesian measurement</p><h2>Turning noisy experiments into a number the business trusts</h2><p>I developed a <strong>three-stage Bayesian meta-analysis</strong> to aggregate results into channel-level estimates with credible intervals.</p><p>Now the <strong>standard for incrementality reporting</strong> and feeds directly into budget allocation.</p><div class="chips"><span class="chip">DerSimonian-Laird</span><span class="chip">Empirical Bayes</span><span class="chip">Monte Carlo</span></div></div>
+  </div>
+
+  <!-- FORECASTING -->
+  <div class="entry" data-themes="all ml">
+    <div class="fig"><span class="fig-label">Forecast hierarchy</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><polyline points="20,80 45,72 70,75 95,60 120,55" stroke="#888" stroke-width="1.5" fill="none"/><polyline points="120,55 145,48 170,40 195,35 220,28" stroke="#2c3e6b" stroke-width="2" fill="none" class="anim-dash"/><polygon points="120,55 145,42 170,32 195,24 220,16 220,40 195,46 170,48 145,54 120,55" fill="#2c3e6b" opacity="0"><animate attributeName="opacity" from="0" to=".08" dur="1s" begin="1.5s" fill="freeze"/></polygon><line x1="120" y1="10" x2="120" y2="110" stroke="#e5e5e5" stroke-dasharray="3 3"/><text x="70" y="108" text-anchor="middle" fill="#888" font-size="7" font-family="Inter">historical</text><text x="170" y="108" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter">forecast</text><circle cx="20" cy="80" r="2.5" fill="#888"/><circle cx="45" cy="72" r="2.5" fill="#888"/><circle cx="70" cy="75" r="2.5" fill="#888"/><circle cx="95" cy="60" r="2.5" fill="#888"/><circle cx="120" cy="55" r="3" fill="#2c3e6b"/></svg></div><span class="fig-status">science review passed</span></div>
+    <div class="text"><p class="when">Forecasting</p><h2>Setting targets the org could believe in</h2><p>I designed a <strong>weighted-ensemble selection framework</strong> with cross-validation and hierarchical reconciliation.</p><p>Goals now distributed based on <strong>data-grounded trend forecasts</strong>, not arbitrary allocation.</p><div class="chips"><span class="chip">SARIMA</span><span class="chip">Prophet</span><span class="chip">ETS / Theta</span><span class="chip">Hierarchical reconciliation</span></div></div>
+  </div>
+
+  <!-- ENGAGEMENT SCORING -->
+  <div class="entry" data-themes="all ml">
+    <div class="fig"><span class="fig-label">Prediction scores</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><text x="8" y="28" fill="#888" font-size="7" font-family="Inter">Eng. A</text><text x="8" y="50" fill="#888" font-size="7" font-family="Inter">Eng. B</text><text x="8" y="72" fill="#888" font-size="7" font-family="Inter">Eng. C</text><text x="8" y="94" fill="#888" font-size="7" font-family="Inter">Eng. D</text><rect x="48" y="20" width="0" height="14" rx="3" fill="#2c3e6b"><animate attributeName="width" from="0" to="170" dur=".8s" begin=".2s" fill="freeze"/></rect><rect x="48" y="42" width="0" height="14" rx="3" fill="#2c3e6b" opacity=".7"><animate attributeName="width" from="0" to="125" dur=".8s" begin=".4s" fill="freeze"/></rect><rect x="48" y="64" width="0" height="14" rx="3" fill="#2c3e6b" opacity=".45"><animate attributeName="width" from="0" to="80" dur=".8s" begin=".6s" fill="freeze"/></rect><rect x="48" y="86" width="0" height="14" rx="3" fill="#2c3e6b" opacity=".25"><animate attributeName="width" from="0" to="40" dur=".8s" begin=".8s" fill="freeze"/></rect></svg></div><span class="fig-status">approved by leadership</span></div>
+    <div class="text"><p class="when">Predictive modeling</p><h2>Helping strategists prioritize by predicted impact</h2><p>I built an ML prediction model scoring engagements by attributes known at request time.</p><p>Approved by senior leadership so strategists can <strong>allocate time to the highest-value opportunities</strong>.</p><div class="chips"><span class="chip">Feature engineering</span><span class="chip">Classification</span><span class="chip">Model interpretation</span></div></div>
+  </div>
+
+  <!-- META -->
+  <div class="entry" data-themes="all product">
+    <div class="fig"><span class="fig-label">Content ranking</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><line x1="30" y1="100" x2="220" y2="100" stroke="#e5e5e5"/><line x1="30" y1="10" x2="30" y2="100" stroke="#e5e5e5"/><path d="M35,90 C60,88 90,85 120,55 C150,25 180,15 215,13" stroke="#2c3e6b" stroke-width="2" fill="none" class="anim-dash" style="stroke-dasharray:250;stroke-dashoffset:250"/><text x="125" y="115" text-anchor="middle" fill="#888" font-size="7" font-family="Inter">confidence score</text><line x1="140" y1="10" x2="140" y2="100" stroke="#8b5c3a" stroke-dasharray="4 3" opacity=".5"/><text x="80" y="48" text-anchor="middle" fill="#8b5c3a" font-size="7" font-family="Inter" opacity="0"><animate attributeName="opacity" from="0" to=".6" dur=".4s" begin="2s" fill="freeze"/>FP zone</text><text x="185" y="48" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter" opacity="0"><animate attributeName="opacity" from="0" to=".8" dur=".4s" begin="2.2s" fill="freeze"/>TP zone</text></svg></div><span class="fig-status">Meta Platforms</span></div>
+    <div class="text"><p class="when">Product &amp; UX research</p><h2>Recalibrating content enforcement metrics at Meta</h2><p><strong>Quantitative UX Researcher at Meta.</strong> Developed sigmoid recalibration to <strong>reduce false positives and increase true positives</strong> for harmful content detection.</p><p>Built a golden-set evaluation model and partnered cross-functionally with Design, PM, and Engineering across the <strong>product cycle</strong>.</p><div class="chips"><span class="chip">Ranking analysis</span><span class="chip">Sigmoid recalibration</span><span class="chip">SQL</span><span class="chip">UX Research</span></div></div>
+  </div>
+
+  <!-- CHI PAPER -->
+  <div class="entry" data-themes="all research">
+    <div class="fig"><span class="fig-label">Expert consensus</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><line x1="30" y1="100" x2="210" y2="100" stroke="#e5e5e5"/><text x="30" y="112" fill="#888" font-size="6" font-family="Inter">1</text><text x="120" y="112" text-anchor="middle" fill="#888" font-size="6" font-family="Inter">5</text><text x="210" y="112" text-anchor="end" fill="#888" font-size="6" font-family="Inter">9</text><g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".5s" begin=".3s" fill="freeze"/><circle cx="50" cy="38" r="4" fill="#8b5c3a" opacity=".4"/><circle cx="80" cy="34" r="4" fill="#2c3e6b" opacity=".4"/><circle cx="130" cy="40" r="4" fill="#6b5b3a" opacity=".4"/><circle cx="165" cy="36" r="4" fill="#5a4a6b" opacity=".4"/><circle cx="190" cy="42" r="4" fill="#3a5a6b" opacity=".4"/><text x="120" y="20" text-anchor="middle" fill="#888" font-size="7" font-family="Inter">Round 1: spread</text></g><g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".6s" begin="1.5s" fill="freeze"/><circle cx="90" cy="70" r="4" fill="#8b5c3a" opacity=".7"/><circle cx="105" cy="68" r="4" fill="#2c3e6b" opacity=".7"/><circle cx="120" cy="72" r="4" fill="#6b5b3a" opacity=".7"/><circle cx="135" cy="66" r="4" fill="#5a4a6b" opacity=".7"/><circle cx="148" cy="71" r="4" fill="#3a5a6b" opacity=".7"/><text x="120" y="58" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter">Round 2: caution increases</text></g></svg></div><span class="fig-status">under review · CHI 2027</span></div>
+    <div class="text"><p class="when">Published research</p><h2>Governing GenAI in healthcare</h2><p>Co-authored a paper that <strong>makes the question of GenAI appropriateness measurable</strong>, using modified Delphi / RAND-UCLA to derive actionable guidelines.</p><p>Under review at <strong>CHI 2027</strong>. Argues governing AI in healthcare is a human-centered design problem.</p><div class="chips"><span class="chip">Modified Delphi</span><span class="chip">RAND/UCLA</span><span class="chip">Responsible AI</span></div></div>
+  </div>
+
+  <!-- AI-RQA -->
+  <div class="entry" data-themes="all research llm">
+    <div class="fig"><span class="fig-label">NLP pipeline</span><div class="fig-canvas"><svg viewBox="0 0 240 120" fill="none"><rect x="10" y="30" width="55" height="60" rx="5" fill="none" stroke="#888"/><line x1="18" y1="42" x2="56" y2="42" stroke="#e5e5e5"/><line x1="18" y1="50" x2="50" y2="50" stroke="#e5e5e5"/><line x1="18" y1="58" x2="53" y2="58" stroke="#e5e5e5"/><line x1="18" y1="66" x2="48" y2="66" stroke="#e5e5e5"/><text x="37" y="86" text-anchor="middle" fill="#888" font-size="6" font-family="Inter">transcript</text><line x1="70" y1="60" x2="95" y2="60" stroke="#2c3e6b" stroke-width="1.2" class="anim-dash" style="stroke-dasharray:30;stroke-dashoffset:30"/><rect x="98" y="40" width="50" height="40" rx="6" fill="#2c3e6b" opacity=".08" stroke="#2c3e6b" stroke-width="1.2"/><text x="123" y="57" text-anchor="middle" fill="#2c3e6b" font-size="7" font-family="Inter">SLM</text><text x="123" y="68" text-anchor="middle" fill="#2c3e6b" font-size="6" font-family="Inter">DistilBERT</text><line x1="152" y1="60" x2="175" y2="60" stroke="#2c3e6b" stroke-width="1.2" class="anim-dash" style="stroke-dasharray:30;stroke-dashoffset:30;animation-delay:.5s"/><g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".5s" begin="1.5s" fill="freeze"/><rect x="178" y="30" width="52" height="16" rx="4" fill="#2c3e6b" opacity=".1"/><text x="204" y="41" text-anchor="middle" fill="#2c3e6b" font-size="6.5" font-family="Inter">Code A</text><rect x="178" y="52" width="52" height="16" rx="4" fill="#2c3e6b" opacity=".1"/><text x="204" y="63" text-anchor="middle" fill="#2c3e6b" font-size="6.5" font-family="Inter">Code B</text><rect x="178" y="74" width="52" height="16" rx="4" fill="#2c3e6b" opacity=".1"/><text x="204" y="85" text-anchor="middle" fill="#2c3e6b" font-size="6.5" font-family="Inter">Code C</text></g><text x="204" y="104" text-anchor="middle" fill="#2c3e6b" font-size="6" font-family="Inter" opacity="0">near-human agreement<animate attributeName="opacity" from="0" to="1" dur=".4s" begin="2s" fill="freeze"/></text></svg></div><span class="fig-status">published · open-source</span></div>
+    <div class="text"><p class="when">ML research</p><h2>AI-Assisted Rapid Qualitative Analysis for healthcare</h2><p>Built <strong>transformer-based NLP systems</strong> (DistilBERT, ELECTRA) for qualitative healthcare coding, achieving <strong>near-human agreement</strong>. Published in JMIR.</p><p>Co-created <strong><a href="https://github.com/Southsidegbemijo" target="_blank">pytranscripts</a></strong>, an open-source Python library for privacy-preserving qualitative analysis.</p><div class="chips"><span class="chip">Transformers</span><span class="chip">DistilBERT / ELECTRA</span><span class="chip">NLP / SLMs</span><span class="chip">Open-source</span><span class="chip">JMIR</span></div></div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <span>© <span id="yr"></span> Adeola Adegbemijo</span>
+  <span>Built with care, hosted with simplicity</span>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Theme filter
+const buttons = document.querySelectorAll('.theme-btn');
+const entries = document.querySelectorAll('.entry');
+function filterEntries(theme) {
+  buttons.forEach(b => b.classList.toggle('active', b.dataset.theme === theme));
+  entries.forEach(entry => {
+    entry.classList.toggle('visible', entry.dataset.themes.split(' ').includes(theme));
+  });
+}
+buttons.forEach(btn => btn.addEventListener('click', () => filterEntries(btn.dataset.theme)));
+filterEntries('all');
+
+// Fig 1: Randomization dots
+(function() {
+  const g = document.getElementById('fig1-dots'), fig = document.getElementById('fig1');
+  function randomize() {
+    g.innerHTML = '';
+    for (let i = 0; i < 20; i++) {
+      const t = Math.random() > 0.5;
+      const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      c.setAttribute('cx', t ? 20 + Math.random() * 80 : 140 + Math.random() * 80);
+      c.setAttribute('cy', 30 + Math.random() * 72); c.setAttribute('r', '4');
+      c.setAttribute('fill', t ? '#2c3e6b' : '#888'); c.setAttribute('opacity', '0');
+      c.style.transition = 'opacity 0.4s ease ' + (i * 0.05) + 's';
+      g.appendChild(c); requestAnimationFrame(function() { c.setAttribute('opacity', '0.7'); });
+    }
+  }
+  randomize(); fig.addEventListener('click', randomize);
+})();
+
+// Fig 2: Envelopes
+(function() {
+  var g = document.getElementById('fig2-envelopes');
+  function env(x, y, s) {
+    var r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', '14'); r.setAttribute('height', '10'); r.setAttribute('rx', '2');
+    r.setAttribute('fill', s ? '#2c3e6b' : '#8b5c3a'); r.setAttribute('opacity', s ? '0.3' : '0.2');
+    var p = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+    p.setAttribute('points', x+','+y+' '+(x+7)+','+(y+5)+' '+(x+14)+','+y);
+    p.setAttribute('fill', s ? '#2c3e6b' : '#8b5c3a'); p.setAttribute('opacity', s ? '0.45' : '0.3');
+    g.appendChild(r); g.appendChild(p);
+  }
+  for (var i = 0; i < 8; i++) env(80 + Math.random() * 65, 15 + i * 10, true);
+  for (var i = 0; i < 3; i++) env(168 + Math.random() * 45, 20 + i * 22, false);
+})();
+
+// Panel grid
+(function() {
+  var g = document.getElementById('fig-panel-grid');
+  if (!g) return;
+  for (var r = 0; r < 6; r++) {
+    for (var c = 0; c < 12; c++) {
+      var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      rect.setAttribute('x', 20 + c * 17); rect.setAttribute('y', 10 + r * 15);
+      rect.setAttribute('width', '14'); rect.setAttribute('height', '12'); rect.setAttribute('rx', '2');
+      var isTreated = c >= 6 && r < 3;
+      rect.setAttribute('fill', isTreated ? '#2c3e6b' : '#e5e5e5');
+      rect.setAttribute('opacity', '0');
+      rect.style.transition = 'opacity 0.3s ease ' + ((r * 12 + c) * 0.02) + 's';
+      g.appendChild(rect);
+      requestAnimationFrame(function(el, tr) { return function() { el.setAttribute('opacity', tr ? '0.5' : '0.3'); }; }(rect, isTreated));
+    }
+  }
+})();
+</script>
+</body>
+</html>
